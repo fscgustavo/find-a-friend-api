@@ -10,7 +10,7 @@ export type SearchManyPetsParams = {
 }
 
 export type CreatePetParams = Prisma.PetUncheckedCreateInput & {
-  adoptionRequirements?: string[]
+  adoptionRequirements: string[]
 }
 
 export interface PetRepository {
