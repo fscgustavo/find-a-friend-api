@@ -22,6 +22,7 @@ describe('Create Pet Use Case', async () => {
       independence: 'Low',
       size: 'small',
       organizationId: 'org-1',
+      adoptionRequirements: [],
     })
 
     expect(pet.id).toEqual(expect.any(String))

@@ -8,7 +8,7 @@ export async function get(request: FastifyRequest, reply: FastifyReply) {
     id: z.string(),
   })
 
-  const { id } = getPetQuerySchema.parse(request.query)
+  const { id } = getPetQuerySchema.parse(request.params)
 
   const getPetUseCase = makeGetPetUseCase()
 
